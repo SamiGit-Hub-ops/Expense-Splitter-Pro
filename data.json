@@ -1,0 +1,39 @@
+{
+  "users": [
+    {
+      "name": "Jon",
+      "id": "34fed821-8081-4e4d-ade5-8755f7df0e86"
+    },
+    {
+      "name": "Nora",
+      "id": "56d5645f-8b01-4376-811a-3e16eac11802"
+    },
+    {
+      "name": "Dom",
+      "id": "6687bee7-f01c-4109-b024-68db0c0b42fd"
+    }
+  ],
+  "expenses": [
+    {
+      "id": "b7855993-3760-46ac-949d-a580daf4ff2d",
+      "paidBy": "Jon",
+      "amount": 700,
+      "description": "No description",
+      "timeStamp": "2026-02-26T20:28:25.265Z"
+    },
+    {
+      "id": "bb1ff6de-3519-43ff-b464-365a583e634a",
+      "paidBy": "Nora",
+      "amount": 300,
+      "description": "No description",
+      "timeStamp": "2026-02-26T20:28:31.766Z"
+    },
+    {
+      "id": "ec4c0b4a-2b47-4a62-b1c2-28482d0e21c2",
+      "paidBy": "Dom",
+      "amount": 1100,
+      "description": "No description",
+      "timeStamp": "2026-02-26T20:29:05.740Z"
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Splitter Refactored</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <script defer type="module" src="Main.js"></script>
+    <link href="Main.css" rel="stylesheet" />
+</head>
+<body class="bg-gray-100 p-8">
+    <div class="max-w-4xl mx-auto space-y-8">
+        <h1 class="text-4xl font-bold text-center">💸 Splitter (Node Persistence)</h1>
+        <form id="addUserForm" class="bg-white p-6 rounded shadow">
+            <h2 class="text-xl mb-4">Add User</h2>
+            <input type="text" id="userInput" placeholder="Name" class="border p-2 w-full mb-4">
+            <button type="submit" class="bg-blue-500 text-white px-4 py-2 rounded">Add User</button>
+        </form>
+        <form id="addExpenseForm" class="bg-white p-6 rounded shadow">
+            <h2 class="text-xl mb-4">Add Expense</h2>
+            <div class="grid grid-cols-3 gap-4">
+                <select id="expenseUserInput" class="border p-2"></select>
+                <input type="number" id="expenseAmountInput" placeholder="Amount" class="border p-2">
+                <input type="text" id="expenseReasonInput" placeholder="Reason" class="border p-2">
+            </div>
+            <button type="submit" class="bg-green-500 text-white px-4 py-2 mt-4 rounded">Add Expense</button>
+        </form>
+        <div class="bg-white p-6 rounded shadow">
+            <button id="simplifyBtn" class="bg-purple-500 text-white px-6 py-3 rounded mb-4">Split It!</button>
+            <div class="grid grid-cols-2 gap-8">
+                <div><h3 class="font-bold">Payments</h3><ul id="payment-list" class="list-disc pl-5"></ul></div>
+                <div><h3 class="font-bold">Settlements</h3><ul id="resultArea" class="list-disc pl-5"></ul></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
